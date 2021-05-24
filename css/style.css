@@ -1,0 +1,116 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+h1{
+text-align: center;
+color: white;
+}
+#introd{
+    font-size: larger;
+}
+
+.ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .ul3 {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #333;
+  }
+   
+ .ul3 li {
+    text-align: center;
+    color: white;
+  }
+  
+ .ul1 li {
+    float: right;
+  }
+  label{
+      color: white;
+  }
+  
+  .ul1 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .ol2{
+      text-align: center;
+      display: table;
+      margin: 0 auto;
+
+  }
+  .ol2 li{
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 10px;
+      text-decoration: black;
+      font-size: x-large;
+  }
+  .ol3{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+
+}
+.ol3 li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: black;
+    font-size: x-large;
+}
+  
+  li a:hover {
+    background-color: #111;
+  }
+#file{
+    width: 90%;
+    height: 30px;
+    
+}
+#movies{
+    background-color: #FEED86;
+    padding: 40px;
+}
+#books{
+    background-color: #333;
+    padding: 40px;
+}
+  .navbar{
+      background-color: #333;
+      padding: 10px;
+      }
+  .intro{
+      background-color: #FEED86;
+      padding: 40px;
+  }
+  .skills{
+    background-color: #333;
+    padding: 40px;
+}
+.fun{
+    background-color: #FEED86;
+    padding: 40px;
+}
+
+.ul2{
+    color: black;
+    font-size: large;
+}
