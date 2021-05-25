@@ -217,4 +217,4 @@ function seventhQuestion(){
 }
 seventhQuestion();
 
-alert('you have owned ' + ' ' + yourPoints + ' ' + 'out of 7 Congrats !!!');
+alert('you have owned ' + ' ' + yourPoints + ' ' + 'out of 5 Congrats !!!');
