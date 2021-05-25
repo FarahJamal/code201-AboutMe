@@ -1,4 +1,3 @@
-// guessing game
   
 'use strict';
 var yourPoints = 0;
@@ -6,15 +5,14 @@ var yourPoints = 0;
 var gistName = prompt(
     'hello, welcome to my profile, could you please tell me your name?'
 );
-// if the user insert invaled or number value, while, do and parseInt will solve the problem
 while (!isNaN(parseInt(gistName))) {
     gistName = prompt(' please use letters.Could you please tell me your name?');
 }
+
 alert(' Are you a Potter head?');
 
  alert(' Welcome' + ' ' + gistName + ' ' + 'to my profile');
- 
-//first question
+ //console.log('Welcome' + ' ' + gistName + ' ' + 'to my profile');
 
 function firstQuestion(){
     var firstQ = prompt('Do you think I am a potter head?').toUpperCase();
@@ -31,10 +29,14 @@ function firstQuestion(){
         case 'Y':
         case 'YES':
             alert('that\'s correct,' + '  ' + gistName + ' '+ 'I am a big big big Potter fan :) ');
+            //console.log('that\'s correct,' + '  ' + gistName + ' '+ 'I am a big big big Potter fan :) ');
+
             break;
         case 'N':
         case 'NO':
             alert('Hmmm :(, No I Love Harry Potter from my bottom of my heart');
+            //console.log('Hmmm :(, No I Love Harry Potter from my bottom of my heart');
+
     }
 }
 firstQuestion();
@@ -43,7 +45,6 @@ function secondQuestion(){
     var hostHoppy = prompt(
         gistName + ' ' + 'Do I like to watch Sports matches?! (yes/no)'
     ).toLowerCase();
-    // if the user insert number value, while, do and parseInt will solve the problem
     while (
         hostHoppy !== 'y' &&
         hostHoppy !== 'yes' &&
@@ -53,7 +54,6 @@ function secondQuestion(){
        
         hostHoppy = prompt('Remember its a Yes/No question\nQuestion - > Do I like to watch Sports matches?!').toLowerCase();
     }
-     // // points counter (to count how many correct answers the user do)
      switch (hostHoppy) {
         case true:
         case 'n':
@@ -69,9 +69,12 @@ function secondQuestion(){
             alert(
                 'Sooooo sorry, but I don\'t like to watch Sports matches'
             );
+           // console.log('Sooooo sorry, but I don\'t like to watch Sports matches');
             break;
         default:
             alert('yes I don\'t like watching Sports matches');
+            //console.log('yes I don\'t like watching Sports matches');
+
     }
 }
 secondQuestion();
@@ -88,14 +91,22 @@ function thirdQuestion() {
         }
         if (hostAge <= 10) {
             alert('NO NO NO NO, too young ');
+            //console.log('NO NO NO NO, too young ');
+
         } else if (hostAge === 22) {
             alert('yes! you are Right');
+            //console.log('yes! you are Right');
+
             yourPoints += 1;
             break;
         } else if (hostAge >= 30) {
             alert('NO NO NO NO , too old  , Try Again');
+          ///  console.log('NO NO NO NO , too old  , Try Again');
+
         } else if (25 < hostAge < 30) {
             alert('getting close, keep trying');
+           // console.log('getting close, keep trying');
+
         }
     }
     alert('I am 22 years old');
