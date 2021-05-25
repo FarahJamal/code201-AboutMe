@@ -9,7 +9,7 @@ while (!isNaN(parseInt(gistName))) {
     gistName = prompt(' please use letters.Could you please tell me your name?');
 }
 
-alert(' Are you a Potter head?');
+prompt(' Are you a Potter head?');
 
  alert(' Welcome' + ' ' + gistName + ' ' + 'to my profile');
  //console.log('Welcome' + ' ' + gistName + ' ' + 'to my profile');
@@ -30,6 +30,7 @@ function firstQuestion(){
         case 'YES':
             alert('that\'s correct,' + '  ' + gistName + ' '+ 'I am a big big big Potter fan :) ');
             //console.log('that\'s correct,' + '  ' + gistName + ' '+ 'I am a big big big Potter fan :) ');
+            yourPoints+=1;
 
             break;
         case 'N':
@@ -158,8 +159,8 @@ fourthQuestion();
 
 
 
+
 function sixthQuestion(){
-// Q -> 6
 var sixQ = prompt('Do you think Harry Potter is one of my best movies?').toUpperCase();
 while (
     sixQ !== 'N' &&
@@ -167,7 +168,7 @@ while (
     sixQ !== 'YES' &&
     sixQ !== 'Y'
 ) {
-    sixQ = prompt('Remember its a YES or NO question \n Question -> Do you think Harry Potter is one of my best movies?');
+    sixQ = prompt('Remember its a YES or NO question \n Question -> Do you think Harry Potter is one of my best movies?').toUpperCase();
 
 switch (sixQ) {
     case 'Y':
@@ -217,4 +218,32 @@ function seventhQuestion(){
 }
 seventhQuestion();
 
-alert('you have owned ' + ' ' + yourPoints + ' ' + 'out of 5 Congrats !!!');
+var hatedChar = ['Voldemort','Draco','James Potter','Belatrix'];
+
+function hatChar() {
+var gistAnswer = prompt('whose is the worst one im my opinion ?' +  "'Albus Dambuldor'\r\n'Severus Snape'\r \n,'Serious Black' \r \n,'Voldemort'\r \n,'Draco'\r \n,'James Potter'\r \n,'Belatrix'\r \n,'Ron'\r \n").toLowerCase();
+var attemptNum = 0;
+        
+for(var x= 0;x <=attemptNum;x++){
+for (var j = 0; j < hatedChar.length; j++) {
+            if (gistAnswer === hatedChar[j].toLowerCase()) {
+                alert('yes, I hate'+gistAnswer);
+                alert('great! you got a golden point, But Do you know what!');
+                alert('I hate James Potter the most!')
+                yourPoints += 1;
+                break;
+            } 
+            
+            else {
+                attemptNum = attemptNum + 1;
+                         }
+        }
+
+     
+    }
+}
+
+hatChar();
+
+
+alert('you have owned ' + ' ' + yourPoints + ' ' + 'out of 8 Congrats !!!');
