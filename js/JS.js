@@ -1,13 +1,16 @@
-  
+//Defines that JavaScript code should be executed in "strict mode".  
 'use strict';
+//intialize the points.
 var yourPoints = 0;
-
+//prompt user name..
 var gistName = prompt(
     'hello, welcome to my profile, could you please tell me your name?'
 );
-while(gistName.length===0){
+// check that the value not null.
+while(gistName.length===0 ){
     gistName = prompt('hello, welcome to my profile, could you please tell me your name?');
 }
+//check that user enter just a letters.
 while (!isNaN(parseInt(gistName))) {
     gistName = prompt(' please use letters.Could you please tell me your name?');
 }
@@ -22,7 +25,7 @@ else if(ph === 'no'){
 }
  alert(' Welcome' + ' ' + gistName + ' ' + 'to my profile');
  //console.log('Welcome' + ' ' + gistName + ' ' + 'to my profile');
-
+// array of questions.
 var questions=
 [
     'Do you think I am a potter head?',
@@ -37,7 +40,7 @@ var questions=
  
 
 
-
+// question 1 start
 function firstQuestion(){
     var firstQ = prompt(questions[0]).toUpperCase();
     while (
@@ -64,7 +67,7 @@ function firstQuestion(){
 
     }
 }
-
+// second question start.
 function secondQuestion(){
     var hostHoppy = prompt(
         gistName + ' ' + questions[1] ).toLowerCase();
@@ -100,7 +103,7 @@ function secondQuestion(){
 
     }
 }
-
+// third question start.
 function fourthQuestion(){
     var questionsFour = [
         questions[2],
@@ -144,7 +147,7 @@ function fourthQuestion(){
 }
 
 
-
+// fourth question start.
 function sixthQuestion(){
     var sixQ = prompt(questions[4]).toUpperCase();
     while (
@@ -217,7 +220,7 @@ for(var i=0;i<functions.length;i++){
 
 
 
-
+// age question start
 function thirdQuestion() {
     for (var Age = 0; Age < 6; Age++) {
         var hostAge = parseInt(
@@ -251,29 +254,20 @@ function thirdQuestion() {
 thirdQuestion();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+// choose right answers from array.
 function questionSeven() {
     var hatedChar = ['Voldemort','Draco','James Potter','Belatrix'];
 
-
+// for loop to make it 6 tries.
     for (var i = 0; i < 6; i++) {
         var gistAnswer = prompt('whose is the worst one im my opinion ?' +  "'Albus Dambuldor'\r\n'Severus Snape'\r \n,'Serious Black' \r \n,'Voldemort'\r \n,'Draco'\r \n,'James Potter'\r \n,'Belatrix'\r \n,'Ron'\r \n").toLowerCase();
-
+// for loop to enter inside the array of hatedchars.
         for (var j = 0; j < hatedChar.length; j++){
+            //keep checking the guest answer till one of the array values are true.
             if (gistAnswer === hatedChar[j].toLowerCase()) {
                 alert('Congrats you got it right!!!');
                 alert('yes, I hate'+ ' '+gistAnswer);
+                // if guest enter any other value except "James Potter" the if statement the if will run.
                 if(gistAnswer != 'James Potter'.toLowerCase()){
                 alert('great! you got a golden point, But Do you know what!');
                 alert('I hate James Potter the most!')
@@ -290,12 +284,13 @@ function questionSeven() {
 }
 
 questionSeven();
- 
+ // guess number game function start here.
 function guessNumberGame()
 {
     var lowerLimit = 1;
     var upperLimit = 100;
     var tries =7 ;
+    // choose number randomly between the lower and upper limit .
     var answer = Math.floor(Math.random() * (upperLimit - lowerLimit + 1)) + lowerLimit;
     var guess = '';
     var message = 'Guess a number between ' + lowerLimit + ' and ' + upperLimit + ':';
@@ -311,7 +306,7 @@ function guessNumberGame()
             alert('Quitting game now.');
             break;
         }
-        // If the guess is a number...
+        // If the guess is a number.
         else if (isFinite(guess) && guess != '') {
             // Make sure the guess is converted into a number.
             guess = +guess;
