@@ -3,6 +3,8 @@
 //intialize the points.
 var yourPoints = 0;
 //prompt user name..
+
+
 var gistName = prompt(
     'hello, welcome to my profile, could you please tell me your name?'
 );
@@ -41,7 +43,10 @@ var questions=
 
 
 // question 1 start
-function firstQuestion(){
+
+
+
+function firstTheQuestion(){
     var firstQ = prompt(questions[0]).toUpperCase();
     while (
         firstQ !== 'N' &&
@@ -68,7 +73,7 @@ function firstQuestion(){
     }
 }
 // second question start.
-function secondQuestion(){
+function secondTheQuestion(){
     var hostHoppy = prompt(
         gistName + ' ' + questions[1] ).toLowerCase();
     while (
@@ -104,7 +109,7 @@ function secondQuestion(){
     }
 }
 // third question start.
-function fourthQuestion(){
+function fourthTheQuestion(){
     var questionsFour = [
         questions[2],
         questions[3],
@@ -148,7 +153,7 @@ function fourthQuestion(){
 
 
 // fourth question start.
-function sixthQuestion(){
+function sixTheQuestion(){
     var sixQ = prompt(questions[4]).toUpperCase();
     while (
         sixQ !== 'N' &&
@@ -170,7 +175,7 @@ function sixthQuestion(){
     }
     }}
 
-    function seventhQuestion(){
+    function sevenTheQuestion(){
         var sevenQ = prompt(
             gistName + ' ' + questions[5]
         ).toLowerCase();
@@ -205,11 +210,11 @@ function sixthQuestion(){
     }
     var functions=
     [
-        firstQuestion(),
-        secondQuestion(),
-        fourthQuestion(),
-        sixthQuestion(),
-        seventhQuestion()
+        firstTheQuestion(),
+        secondTheQuestion(),
+        fourthTheQuestion(),
+        sixTheQuestion(),
+        sevenTheQuestion()
 
     ]
 for(var i=0;i<functions.length;i++){
@@ -220,8 +225,9 @@ for(var i=0;i<functions.length;i++){
 
 
 
+
 // age question start
-function thirdQuestion() {
+function thirdTheQuestion() {
     for (var Age = 0; Age < 6; Age++) {
         var hostAge = parseInt(
             prompt(gistName + ' ' + 'Could you please guess my age')
@@ -251,11 +257,11 @@ function thirdQuestion() {
     }
     alert('I am 22 years old');
  }
-thirdQuestion();
+thirdTheQuestion();
 
 
 // choose right answers from array.
-function questionSeven() {
+function questionTheSeven() {
     var hatedChar = ['Voldemort','Draco','James Potter','Belatrix'];
 
 // for loop to make it 6 tries.
@@ -283,7 +289,7 @@ function questionSeven() {
     }
 }
 
-questionSeven();
+questionTheSeven();
  // guess number game function start here.
 function guessNumberGame()
 {
