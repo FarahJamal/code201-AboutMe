@@ -298,7 +298,7 @@ function guessNumberGame()
     // Keep prompting the user for a guess until the game ends.
     while (tries > 0) {
         // Prompt the user for a guess.
-        guess = prompt(message);
+        guess = Number( prompt(message));
         
         // If the cancel button was pushed, let the user know the game is ending and
         // break out of the loop.
